@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM整合</title>
+    <script language="JavaScript" src="main.js"></script>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<H1>结合js脚本看</H1><br/><br/>
+<div id="div_">
+
+
+<div id="childNodes_">
+    <button onclick="childNodes_()">chlidNodes</button>
+    <p>233</p>
+    <p>2333</p>
+</div>
+
+<div id="firstChild_"><button onclick="firstChild_()">firstChild</button>
+    <p>123</p>
+    <p>123456</p></div>
+
+<div id="nextSibling_">
+    <button onclick="nextSibling_()">nextSibling</button>
+    <ul id="ul_"><li id="li1">列表第一位</li><li id="li2">列表第二位</li></ul>
+    <div id="nextSibling__">
+        点击按钮获取与“列表第一位”相同树级别的下一个列表内容
+    </div><br/>
+    <div id="previousSibling_">
+    点击按钮获取相与“列表第二位”同树级别的上一个列表内容
+    </div><br/>
+    <div id="parentNode_">
+        点击按钮获取列表的父节点id
+    </div>
+</div>
+
+<div id="cloneNode_">
+    <button id="cloneNode_" onclick="cloneNode_()">cloneNode</button>
+    <ul id="ul2">
+        <li>列表第三位</li>
+        <li>列表第四位</li>
+    </ul>
+</div>
+
+
+    <div id="createElement_">
+        <button onclick="createElement_()">createElement</button>
+        <p>帅健呐</p>
+    </div>
+
+    <div id="insertBefore_">
+        <button onclick="insertBefore_()">insertBefore</button>
+        <p id="p_">这是旧的第一个子节点</p>
+    </div>
+
+
+    <div id="removeChild_">
+        <button onclick="removeChild_()">removeChild</button>
+        <p id="p1">准备删除的第一段文字（以父节点获取子节点移除）</p>
+        <p id="p2">准备删除的第二段文字（以子节点获取自己父节点移除）</p>
+        <p id="p3">准备替换的第三段文字（父节点为主体直接把新建的子节点或者要添加的子节点与要替换的子节点写出即可）</p>
+    </div>
+
+</div>
+</body>
+</html>
